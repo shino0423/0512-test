@@ -18,7 +18,7 @@
     <NuxtWelcome />
   </div>
 </template>
-</script>
+<style>
   .home-page{
     margin: 5px;
     margin-bottom: 0;
