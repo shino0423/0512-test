@@ -18,19 +18,6 @@
     <NuxtWelcome />
   </div>
 </template>
-<style>
-<script setup>
-// サーバーサイドでNode.jsのバージョンを取得
-const nodeVersion = ref('Unknown')
-
-// useAsyncDataを使ってサーバーサイドでデータを取得
-const { data } = await useAsyncData('nodeVersion', async () => {
-  // process.versionはサーバーサイドでのみ利用可能
-  return process.version || 'Not available'
-})
-
-// データが取得できたらnodeVersionにセット
-nodeVersion.value = data.value
 </script>
   .home-page{
     margin: 5px;
